@@ -8,7 +8,7 @@ RUN apt update && apt install -y wget
 RUN cd /tmp/ \
     && wget https://github.com/pachterlab/kallisto/releases/download/${kallisto_version}/kallisto_linux-${kallisto_version}.tar.gz \
     && tar -zxvf kallisto_linux-${kallisto_version}.tar.gz \
-    && cp kallisto_linux-*/kallisto/kallisto /usr/local/bin
+    && cp kallisto/kallisto /usr/local/bin
 
 RUN rm -rf /tmp/*
 
