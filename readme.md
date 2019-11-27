@@ -1,1 +1,1 @@
-# docker-template
+# docker-kallisto
